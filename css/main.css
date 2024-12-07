@@ -45,18 +45,18 @@
 .header_nav__link {
     text-decoration: none;
     color: var(--title-text-color);
-    font-family: "Teko", sans-serif;
+    font-family: 'Teko', sans-serif;
     font-weight: 400;
     font-size: 16px;
     background-color: var(--accent-color);
     padding: 10px 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    border: 3px solid var(--accent-color);
 }
 
 .header_nav__link:hover {
     background-color: transparent;
-    border: 1px solid var(--accent-color);
 }
 
 .header_nav__sotial {
@@ -77,6 +77,11 @@
     text-decoration: none;
 }
 
+.header_nav__button:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
 .header_nav__logo {
     width: 196px;
     height: auto;
@@ -85,7 +90,8 @@
 
 .header__content {
     background-image: url(../img/header_bg.jpeg);
-    min-height: 510px;
+    /* min-height: 510px; */
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -103,7 +109,6 @@
 
 .header__content-title {
     color: var(--title-text-color);
-    font-family: "Teko", sans-serif;
     font-size: 64px;
     font-weight: 400;
     text-align: center;
@@ -159,5 +164,70 @@
 @media (min-width: 1000px) {
     .header__content-title {
         font-size: 140px;
+    }
+}
+
+/* Work Optioins */
+
+.work_options {
+    background-color: var(--background-color);
+    padding: 0 24px;
+}
+
+.work_options__title {
+    color: var(--title-text-color);
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.work_options__cards {
+    display: grid;
+    gap: 20px;
+}
+
+.work_options__card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-accent-color);
+}
+
+.work_options__card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.work_options__card-title {
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: var(--accent-color);
+}
+
+.card_info-container {
+    padding: 25px 20px 35px 20px;
+    text-align: center;
+}
+
+.work_options__card-info {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-secondary-color);
+}
+
+@media (min-width: 480px) {
+    .work_options__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 991px) {
+    .work_options__cards {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
