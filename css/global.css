@@ -8,6 +8,11 @@
 
 :root {
     --background-color: #0c1526;
+    --title-text-color: #fff;
+    --text-secondary-color: #9fabba;
+    --text-transparent-color: #ffffffb5;
+    --accent-color: #d23343;
+    --accent-light-color: #db5d69;
     
 }
 
@@ -23,4 +28,19 @@ img {
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+.button-filled {
+    text-decoration: none;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #D23343;
+}
+
+.button-transparent {
+    
+}
+
+.button-general {
+
 }
