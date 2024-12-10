@@ -13,7 +13,8 @@
     --text-secondary-color: #9fabba;
     --text-transparent-color: #ffffffb5;
     --accent-color: #d23343;
-    --accent-light-color: #db5d69;    
+    --accent-light-color: #db5d69;
+    --accent-dark-color: #b0404d;
 }
 
 h1, h2, h3, h4, h5, h6 {
