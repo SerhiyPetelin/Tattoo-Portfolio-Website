@@ -612,6 +612,111 @@
     }
 }
 
+/* Appointment section */
+
+.appointment {
+    background-image: url(../img/appointment-bg.png);
+    background-position: 33% 3%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    padding: 90px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment__form {
+    background: var(--accent-color);
+    padding: 40px;
+    max-width: 570px;
+    width: 100%;
+}
+
+.appointment__content {
+    text-align: center;
+}
+
+.appointment__content-title {
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--title-text-color);
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .appointment__content-title {
+        font-size: 51px;
+    }
+}
+
+@media (min-width: 991px) {
+    .appointment__content-title {
+        font-size: 62px;
+    }
+    .appointment__form {
+        padding: 60px;
+    }
+}
+
+.appointment__content-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--title-text-color);
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+@media (min-width: 991px) {
+    .appointment__content-text {
+        padding: 0 40px;
+    }
+    .appointment__content-text {
+        margin-bottom: 60px;
+    }
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 14px 20px;
+    margin-bottom: 15px;
+    background-color: var(--accent-light-color);
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* input[type="text"]:focus {
+    border: 1px solid #007bff;      doesn't work for some reason?
+} */
+
+input::placeholder {
+    color: var(--text-transparent-color);
+}
+
+.appointment__form-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--title-text-color);
+    color: var(--background-color);
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 40px;
+}
+
+.appointment__form-btn:hover {
+    background-color: var(--background-color);
+    color: var(--title-text-color);
+}
+
 /* Footer section */
 
 .footer {
