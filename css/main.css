@@ -455,9 +455,18 @@
 }
 
 .get_tattoo__content {
-    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
     padding: 0 24px 90px 24px;
+  }
+    
+.get_tattoo__item-number,
+.get_tattoo__item-title,
+.get_tattoo__item-text {
+    margin-bottom: 10px;
 }
+  
 
 .get_tattoo__item-number {
     font-family: 'Teko', sans-serif;
@@ -478,16 +487,17 @@
     font-weight: 400;
     font-size: 16px;
     color: var(--text-transparent-color);
+    line-height: 1.8;
 }
 
-.get_tattoo__content-item { 
-    display: flex;
-    flex-direction: column;
-}
+.get_tattoo__content-item {
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+  }
 
-@media (min-width: 480px) {
-    .get_tattoo__content {
-        grid-template-columns: 1fr 1fr;
+@media (max-width: 480px) {
+    .get_tattoo__content-item {
+        flex: 1 1 100%;
     }
 }
 
