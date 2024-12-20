@@ -686,7 +686,10 @@
     }
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"], 
+input[type="email"], 
+textarea {
     width: calc(100% - 20px);
     padding: 14px 20px;
     margin-bottom: 15px;
@@ -701,7 +704,8 @@ input[type="text"] {
     border: 1px solid #007bff;      doesn't work for some reason?
 } */
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: var(--text-transparent-color);
 }
 
