@@ -57,3 +57,22 @@ img {
         font-size: 62px;
     }
 }
+
+.section-subtitle-class {
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: var(--title-text-color);
+}
+
+@media (min-width: 768px) {
+    .section-subtitle-class {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 991px) {
+    .section-subtitle-class {
+        font-size: 42px;
+    }
+}
