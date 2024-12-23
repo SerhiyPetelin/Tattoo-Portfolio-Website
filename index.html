@@ -178,7 +178,46 @@
         </div>
       </div>
     </section>
-    
+    <section class="awards">
+      <h2 class="awards__title">Awards</h2>
+      <div class="awards__content_wrapper container">
+        <div class="awards__img">
+          <img src="img/awards.jpeg" alt="" class="awards__img-item">
+        </div>
+        <div class="awards__content">
+          <div class="awards__content-item">
+            <div class="awards__content-img">
+              <img src="img/tribal-1.png" alt="" class="awards__bulletpoint-img">
+            </div>
+            <div class="awards__content-info">
+              <p class="awards__content-subtitle"><span>INTERNATIONAL TATTOO CONVENTION</span></p>
+              <p class="awards__content-text">1st place "Best of day"</p>
+            </div>            
+          </div>
+          <div class="awards__content-item">
+            <div class="awards__content-img">
+              <img src="img/tribal-2.png" alt="" class="awards__bulletpoint-img">
+            </div>
+            <div class="awards__content-info">
+              <p class="awards__content-subtitle"><span>FLORENCE TATTOO CONVENTION</span></p>
+              <p class="awards__content-text">1st place "Best of day"</p>
+              <p class="awards__content-text">1st place "Best of day"</p>
+              <p class="awards__content-text">2nd place "Ethnica"</p>
+            </div>            
+          </div>
+          <div class="awards__content-item">
+            <div class="awards__content-img">
+              <img src="img/tribal-3.png" alt="" class="awards__bulletpoint-img">
+            </div>
+            <div class="awards__content-info">
+              <p class="awards__content-subtitle"><span>MANTOVA TATTOO CONVENTION</span></p>
+              <p class="awards__content-text">2nd place "Best of day"</p>
+              <p class="awards__content-text">1st place "People's choice"</p>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="progress">
       <h2 class="progress__title">Work in Progress</h2>
       <div class="progress__photos container">
@@ -204,11 +243,11 @@
             my Berlin studio, choose the sketch and set the session date.
           </p>
           <form id="contactForm" action="https://formspree.io/f/mwpkgjjn"  method="POST">
-            <input type="text" id="name" name="name" placeholder="Name*" required />
-            <input type="tel" id="phone" name="phone" placeholder="Phone number*"  required />
-            <input type="email" id="email" name="email" placeholder="E-mail*" required />
-            <textarea id="story" name="message" placeholder="Type your massage*" rows="5" cols="33"></textarea>
-            <button type="submit" class="appointment__form-btn">Send a request</button> 
+            <input type="text" id="name" name="name" placeholder="Name*" aria-label="Name" pattern="[A-Za-z\s]+" maxlength="50" autocomplete="name" required />
+            <input type="tel" id="phone" name="phone" placeholder="Phone number*"  aria-label="Phone number" pattern="[0-9\s\-]+" required />
+            <input type="email" id="email" name="email" placeholder="E-mail*"  aria-label="E-mail" required />
+            <textarea id="story" name="message" placeholder="Type your message*" aria-label="Your message" rows="5" cols="33"></textarea>
+            <button type="submit" class="appointment__form-btn" aria-label="Send request to book an appointment">Send a request</button> 
             </form>          
         </div>
       </div>
