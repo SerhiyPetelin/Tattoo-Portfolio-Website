@@ -35,7 +35,67 @@
           </div>
         </nav> 
     </header>
-<main></main>
+<main>
+  <section class="featured_tattoos">
+    <div class="featured_tattoos__wrapper">
+      <h2 class="featured_tattoos__title">Featured Tattoos</h2>
+      <img src="img/featured-tattoos-1.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-2.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-3.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-4.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-5.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-6.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-7.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-8.jpeg" alt="" class="featured_tattoos__img-item">
+      <img src="img/featured-tattoos-9.jpeg" alt="" class="featured_tattoos__img-item">
+    </div>
+  </section>
+  <section class="cover_up">
+    <div class="cover_up__wrapper">
+      <h2 class="cover_up__title">Cover Ups</h2>
+      <div class="cover_up__img-items">
+        <img src="img/cover-ups-1.jpeg" alt="" class="cover_up__img-item">
+        <img src="img/cover-ups-3.jpeg" alt="" class="cover_up__img-item">
+      </div>
+    </div>
+  </section>
+  <section class="festival_works">
+    <div class="festival_works__wrapper">
+      <h2 class="festival_works__title">Festival Works</h2>
+      <div class="festival_works__content">
+        <div class="festival_works__content-item">
+          <img src="img/festival-works-1.png" alt="" class="festival_works__content-img">
+          <p class="estival_works__content-text">World Tattoo Convention</p>
+        </div>
+        <div class="festival_works__content-item">
+          <img src="img/festival-works-2.jpeg" alt="" class="festival_works__content-img">
+          <p class="estival_works__content-text">Mantova Tattoo Convention</p>
+        </div>
+        <div class="festival_works__content-item">
+          <img src="img/festival-works-3.jpeg" alt="" class="festival_works__content-img">
+          <p class="estival_works__content-text">Florence Tattoo Convention</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="appointment">
+      <div class="appointment__form">
+        <div class="appointment__content">
+          <h2 class="appointment__content-title">Make an Appointment</h2>
+          <p class="appointment__content-text">Fill out the form to get acquainted with me at 
+            my Berlin studio, choose the sketch and set the session date.
+          </p>
+          <form id="contactForm" action="https://formspree.io/f/mwpkgjjn"  method="POST">
+            <input type="text" id="name" name="name" placeholder="Name*" aria-label="Name" pattern="[A-Za-z\s]+" maxlength="50" autocomplete="name" required />
+            <input type="tel" id="phone" name="phone" placeholder="Phone number*"  aria-label="Phone number" pattern="[0-9\s\-]+" required />
+            <input type="email" id="email" name="email" placeholder="E-mail*"  aria-label="E-mail" required />
+            <textarea id="story" name="message" placeholder="Type your message*" aria-label="Your message" rows="5" cols="33"></textarea>
+            <button type="submit" class="appointment__form-btn" aria-label="Send request to book an appointment">Send a request</button> 
+            </form>          
+        </div>
+      </div>
+    </section>
+</main>
 <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__logo-container">

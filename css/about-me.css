@@ -168,6 +168,9 @@
 
 .consultation {
     background-image: url(../img/free-consultation-bg.png);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
     padding: 0 24px 90px 24px;
 }
 
