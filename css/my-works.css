@@ -1,0 +1,47 @@
+/* Featured tattoos section */
+
+.featured_tattoos {
+    background-color: var(--background-accent-color);
+    padding: 0 24px 90px 24px;
+}
+
+.featured_tattoos__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .featured_tattoos__content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.featured_tattoos__img-item {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 15px solid var(--background-color);
+}
+
+/* Cover up section*/
+
+.cover_up {
+    background-image: url(../img/tatto-swssion-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 24px 90px 24px;
+}
+
+.cover_up__img-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .cover_up__img-items {
+        flex-direction: row;
+    }
+}
